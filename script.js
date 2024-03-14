@@ -6,8 +6,8 @@ document.getElementById('poolForm').addEventListener('submit', function(event) {
     const depth = document.getElementById('depth').value;
 
     const volume = length * width * depth;
-    // Assuming 1 cubic meter = 1000 liters
+    // Assumindo 1 metro cúbico = 1000 litros
     const liters = volume * 1000;
 
-    document.getElementById('result').textContent = `You need ${liters.toLocaleString()} liters of water to fill the pool.`;
+    document.getElementById('result').textContent = `Você precisa de ${liters.toLocaleString()} litros de água para encher a piscina.`;
 });
